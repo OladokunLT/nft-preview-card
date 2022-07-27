@@ -23,5 +23,24 @@ body {
     background: var(--Very-dark-blue-main-BG);
     font-size: var(--paragraph-font-18px);
 }
-
-     
+.bg-main {
+    background-color: var(--Very-dark-blue-card-BG);
+}
+.w-main {
+    width: 90vw;
+}
+.mx-auto{
+    margin: 0 auto;
+}
+.my {
+    margin: 10px;
+}
+.flex {
+    display: flex;
+}
+.flex-col {
+    flex-direction: column;
+}
+.p-xy {
+    padding: 10px;
+}
