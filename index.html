@@ -3,42 +3,55 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">  
   <title>Frontend Mentor | NFT preview card component</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
+    .attribution { font-size: 11px; text-align: center; margin-top: 10px; }
+    .attribution a { color: hsl(228, 45%, 44%); text-decoration: none; }
   </style>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <main class="bg-main rounded my mx-auto p-xy w-main flex flex-col">
-    <figure class="mb">
-      <img src="./images/image-equilibrium.jpg" alt="cube">
-      <img src="./images/icon-view.svg" alt="icon-view">
-    </figure>
-    <section class="flex flex-col">
-      <p class="f-size fw text-white hover">Equilibrium #3429</p>
-      <p class="text-white-dirty py"></p>
-      <div class="flex justify-between align-center h-icon">
-        <img src="" alt="ETH"><span class="hover">0.041ETH</span>
-        <img src="" alt="clock"><span class="hover text-white-dirty">3 days left</span>
+  <div class="wrapper grid-center h-100vh">
+    <main class="bg-main rounded p-xy w-main flex flex-col">
+      <!-- Hero section -->
+          <figure class="hero-eye-icon grid-center rounded mb">
+            <img class="hero-image img-equilibrium rounded" src="./images/image-equilibrium.jpg" alt="cube">
+          </figure>
+      
+      <!-- article section -->
+      <section class="flex flex-col">
+        <p class="t-white fw-700">Equilibrium #3429</p>
+        <p class="fw-300 t-small my">Our Equilibrium collection promotes balance and calm</p>
+        <div class="flex justify-between align-center fw-400 t-small">
+          <div class="flex align-center cyan">
+            <img src="./images/icon-ethereum.svg" alt="ETH">
+            <span>0.041ETH</span>
+          </div>
+          <div class="flex align-center">
+            <img src="./images/icon-clock.svg" alt="clock">
+            <span>3 days left</span>
+          </div>
+        </div>
+      </section>
+      
+      <hr class="my"> 
+      
+      <div class="flex f-gap align-center fw-400">
+        <img src="./images/image-avatar.png" width="30" height="30" alt="avatar">
+        <span class="t-small">Creation of <span class="t-white">Junes Wyvern</span> </span>
       </div>
-    </section>
-    <hr class="my"> 
-    <div class="flex f-gap align-center">
-      <img src="" alt="avatar">
-      <p class="text-white-dirty">Creation of <span class="text-white hover">Junes Wyvern</span></p>
-    </div>
-  </main>
 
-  <footer class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. <br>
-    Coded by <a href="#">Lukman oladokun</a>.
-  </footer>
+      <footer class="attribution">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. <br>
+        Coded by <a href="#">Lukman oladokun</a>.
+      </footer>
+    </main>
+
+    
+
+  </div>
 </body>
 </html>
