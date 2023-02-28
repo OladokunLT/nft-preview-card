@@ -44,5 +44,3 @@ Users should be able to:
 
 ### What I learned
 I learned new ways of using _background-image_ and _opacity_ properties to style the hero sections.
-
-I had tough time styling the hero, I'd expected that _z-index_ property would work, but it end up frustrating my effort. I wish someone could give hint on how to use _z-index_ to style the hero section.
